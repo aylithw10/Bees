@@ -6,13 +6,6 @@ namespace BeeUnitTests
 {
     public class DamageBees
     {
-        public enum BeeType
-        {
-            Queen,
-            Worker,
-            Drone
-        }
-
         [Theory]
         [InlineData(BeeType.Worker, 10, false)]
         [InlineData(BeeType.Worker, 31, true)]
@@ -24,7 +17,7 @@ namespace BeeUnitTests
         {
             var bee = new Bee
             {
-                BeeType = (Bees.Data.BeeType)type,
+                BeeType = type,
                 Health = 100,
                 Name = "Test bee"
             };
@@ -39,7 +32,7 @@ namespace BeeUnitTests
         {
             var bee = new Bee
             {
-                BeeType = Bees.Data.BeeType.Drone,
+                BeeType = BeeType.Drone,
                 Health = 25,
                 Name = "Test bee",
                 Dead = true

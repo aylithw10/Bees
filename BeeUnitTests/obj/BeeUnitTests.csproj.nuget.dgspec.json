@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aylith\\source\\repos\\Bees\\BeeUnitTests\\BeeUnitTests.csproj": {}
+    "D:\\Bees\\Bees\\BeeUnitTests\\BeeUnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aylith\\source\\repos\\Bees\\Bees\\Bees.csproj": {
+    "D:\\Bees\\Bees\\Bees\\Bees.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aylith\\source\\repos\\Bees\\Bees\\Bees.csproj",
+        "projectUniqueName": "D:\\Bees\\Bees\\Bees\\Bees.csproj",
         "projectName": "Bees",
-        "projectPath": "C:\\Users\\Aylith\\source\\repos\\Bees\\Bees\\Bees.csproj",
+        "projectPath": "D:\\Bees\\Bees\\Bees\\Bees.csproj",
         "packagesPath": "C:\\Users\\Aylith\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aylith\\source\\repos\\Bees\\Bees\\obj\\",
+        "outputPath": "D:\\Bees\\Bees\\Bees\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\Aylith\\source\\repos\\Bees\\BeeUnitTests\\BeeUnitTests.csproj": {
+    "D:\\Bees\\Bees\\BeeUnitTests\\BeeUnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aylith\\source\\repos\\Bees\\BeeUnitTests\\BeeUnitTests.csproj",
+        "projectUniqueName": "D:\\Bees\\Bees\\BeeUnitTests\\BeeUnitTests.csproj",
         "projectName": "BeeUnitTests",
-        "projectPath": "C:\\Users\\Aylith\\source\\repos\\Bees\\BeeUnitTests\\BeeUnitTests.csproj",
+        "projectPath": "D:\\Bees\\Bees\\BeeUnitTests\\BeeUnitTests.csproj",
         "packagesPath": "C:\\Users\\Aylith\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aylith\\source\\repos\\Bees\\BeeUnitTests\\obj\\",
+        "outputPath": "D:\\Bees\\Bees\\BeeUnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -88,8 +88,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Aylith\\source\\repos\\Bees\\Bees\\Bees.csproj": {
-                "projectPath": "C:\\Users\\Aylith\\source\\repos\\Bees\\Bees\\Bees.csproj"
+              "D:\\Bees\\Bees\\Bees\\Bees.csproj": {
+                "projectPath": "D:\\Bees\\Bees\\Bees\\Bees.csproj"
               }
             }
           }
