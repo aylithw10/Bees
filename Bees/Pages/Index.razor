@@ -1,0 +1,44 @@
+﻿@inherits IndexBase
+@page "/"
+
+<button class="btn btn-primary" @onclick="CreateBee">Spawn some bees</button>
+
+@if (BeeList.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Bee type</th>
+                <th>Health</th>
+                <th>Bee is dead</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @{               
+
+                foreach (var bee in BeeList.OrderBy(x => x.BeeType))
+                {
+                    <tr>
+                        <td>@bee.Name</td>
+                        <td>@bee.BeeType</td>
+                        <td>@bee.Health</td>
+                        <td>@bee.Dead</td>
+                        <td>
+                            <div>
+                                <input  @bind-value="@Damage" />                    
+                                <button type="button" @onclick="@(() => DamageBee(bee, @Damage))">Hurt the bee</button>
+                            </div>
+                        </td>
+                        <td>
+                            <button id="bt" type="button" @onclick="@(() => HurtBeeRandom(bee))">Random damage to bee</button>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+}
+
