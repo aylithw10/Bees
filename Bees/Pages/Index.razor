@@ -21,6 +21,7 @@
 
                 foreach (var bee in BeeList.OrderBy(x => x.BeeType))
                 {
+                    var theId = Guid.NewGuid();
                     <tr>
                         <td>@bee.Name</td>
                         <td>@bee.BeeType</td>
@@ -28,8 +29,8 @@
                         <td>@bee.Dead</td>
                         <td>
                             <div>
-                                <input  @bind-value="@Damage" />                    
-                                <button type="button" @onclick="@(() => DamageBee(bee, @Damage))">Hurt the bee</button>
+                                <input id=@theId @bind="bee.DamageToTake" />                    
+                                <button type="button" @onclick="@(() => DamageBee(bee, bee.DamageToTake))">Hurt the bee</button>
                             </div>
                         </td>
                         <td>

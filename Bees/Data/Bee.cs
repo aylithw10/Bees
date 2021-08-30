@@ -8,6 +8,8 @@
 
         public bool Dead { get; set; }
 
+        public float DamageToTake { get; set; }
+
         public BeeType BeeType { get; set;}        
     }
 }

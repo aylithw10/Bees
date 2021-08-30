@@ -8,7 +8,6 @@ namespace Bees.Pages
     public class IndexBase : ComponentBase
     {
         protected List<Bee> BeeList = new List<Bee>();
-        protected int Damage = 0;
 
         protected void CreateBee()
         {
@@ -51,14 +50,13 @@ namespace Bees.Pages
 
         public void DamageBee(Bee bee, float damage)
         {
-            Damage = 0;
-
             if (bee.Dead || damage > 100) return;
 
             var damageToDeal = (bee.Health / 100) * damage;                        
             bee.Health = bee.Health -= damageToDeal;
 
             bee.Dead = CheckLife(bee);
+            bee.DamageToTake = 0;
         }
 
         private bool CheckLife(Bee bee)
